@@ -59,7 +59,7 @@ POST http://localhost:3000/events/{{eventId}}/spots
 Content-Type: application/json
 
 {
-  "name": "A5"
+  "name": "A1"
 }
 
 ###
@@ -69,6 +69,7 @@ Content-Type: application/json
 ###
 POST http://localhost:3000/events/{{eventId}}/reserve
 Content-Type: application/json
+X-Api-Token: 123
 
 {
   "spots": ["{{ spotName }}"],
